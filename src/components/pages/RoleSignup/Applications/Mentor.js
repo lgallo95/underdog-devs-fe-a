@@ -139,8 +139,12 @@ const Mentor = () => {
                     name="email"
                     rules={[
                       {
+                        type: 'email',
+                        message: 'Please input a valid email address.',
+                      },
+                      {
                         required: true,
-                        message: 'Email is required!',
+                        message: 'Email is required.',
                       },
                     ]}
                     value={formValues.email}
@@ -148,7 +152,7 @@ const Mentor = () => {
                       inputChange('email', evt.target.value);
                     }}
                   >
-                    <Input placeholder="Enter valid email" />
+                    <Input placeholder="Email address" />
                   </Form.Item>
                 </Col>
 
