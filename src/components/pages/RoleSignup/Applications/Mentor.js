@@ -17,9 +17,11 @@ import {
   ReconciliationOutlined,
   IdcardOutlined,
 } from '@ant-design/icons';
-import './Styles/mentorApplication.css';
 import { states } from '../../../common/constants';
+import './Styles/mentorApplication.css';
+
 const { Title } = Typography;
+
 const { Option } = Select;
 
 const initialFormValues = {
@@ -90,7 +92,7 @@ const Mentor = () => {
               Mentor Application
             </Title>
             <Col span={18} offset={3}>
-              <Title level={5}>Fill out your user Information</Title>
+              <Title level={5}>Please fill out your user Information</Title>
               <br />
               <Row gutter={[16, 16]}>
                 <Col md={12} xs={24}>
@@ -101,7 +103,7 @@ const Mentor = () => {
                     rules={[
                       {
                         required: true,
-                        message: 'First name is required!',
+                        message: 'First name is required.',
                       },
                     ]}
                     value={formValues.first_name}
@@ -120,7 +122,7 @@ const Mentor = () => {
                     rules={[
                       {
                         required: true,
-                        message: 'Last name is required!',
+                        message: 'Last name is required.',
                       },
                     ]}
                     value={formValues.last_name}
@@ -186,7 +188,7 @@ const Mentor = () => {
                       rules={[
                         {
                           required: true,
-                          message: 'Country is required!',
+                          message: 'Country is required.',
                         },
                       ]}
                       value={formValues.country}
@@ -210,7 +212,7 @@ const Mentor = () => {
                         rules={[
                           {
                             required: true,
-                            message: 'City is required!',
+                            message: 'City is required.',
                           },
                         ]}
                         value={formValues.city}
@@ -238,7 +240,7 @@ const Mentor = () => {
                 <hr />
                 <br />
                 <div className="current_comp">
-                  <h3>Current company and position?:</h3>
+                  <h3>Current company and position:</h3>
                 </div>
                 <label>
                   Current company
@@ -336,8 +338,7 @@ const Mentor = () => {
               <br />
               <Col>
                 <h3>
-                  How else can you contribute in the progression of our
-                  mentees?*
+                  How can you contribute in the progression of our mentees?*
                 </h3>
                 <Checkbox.Group>
                   <Checkbox
