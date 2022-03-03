@@ -201,7 +201,7 @@ const Mentee = () => {
                       rules={[
                         {
                           required: true,
-                          message: 'Country is required!',
+                          message: 'Country is required.',
                         },
                       ]}
                       value={formValues.country}
